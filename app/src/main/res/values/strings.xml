@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Teacher grades</string>
+
+    <string name="hint_name_to_login">Enter your name</string>
+    <string name="login_btn">Login</string>
+
+    <dimen name="hint_name_to_login_marginTop">250dp</dimen>
+    <dimen name="login_btn_marginTop">100dp</dimen>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
