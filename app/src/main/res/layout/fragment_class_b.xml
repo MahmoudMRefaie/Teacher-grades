@@ -1,14 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClassBFragment">
+    android:orientation="vertical"
+    tools:context=".ClassAFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/classBTitle"
+        android:layout_marginLeft="30dp"/>
 
-</FrameLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        android:background="#000000">
+
+        <TableRow
+            android:id="@+id/headerTable"
+            android:layout_marginTop="1dp"
+            android:layout_marginHorizontal="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@color/table_header"
+                android:textStyle="bold"
+                android:layout_marginRight="1dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grade"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@color/table_header"
+                android:textStyle="bold"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginHorizontal="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mahmoud"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#D5D5D5"
+                android:layout_marginRight="1dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="37"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#D5D5D5"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginHorizontal="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khaled"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="1dp"
+                android:background="#EFEFEF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="41"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#EFEFEF"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginHorizontal="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hossam"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#D5D5D5"
+                android:layout_marginRight="1dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="42"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#D5D5D5"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginHorizontal="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adel"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="1dp"
+                android:background="#EFEFEF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#EFEFEF"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginBottom="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sayed"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#D5D5D5"
+                android:layout_marginRight="1dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#D5D5D5"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

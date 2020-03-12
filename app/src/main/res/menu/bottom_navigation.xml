@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/classA"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="Class A"/>
+
+    <item
+        android:id="@+id/classB"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="Class B"/>
+
+    <item
+        android:id="@+id/classC"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="Class C"/>
+</menu>
