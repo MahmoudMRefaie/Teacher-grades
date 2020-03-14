@@ -4,39 +4,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ClassAFragment">
+    tools:context=".ClassCFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/classCTitle"
-        android:layout_marginLeft="30dp"/>
+        android:textSize="@dimen/classTitleSize"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="@dimen/classTitleMarginLeft"/>
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginVertical="20dp"
-        android:background="#000000">
+        android:layout_marginHorizontal="@dimen/tableMarginHorizontal"
+        android:layout_marginTop="@dimen/tableMarginTop"
+        android:background="@color/colorBlack">
 
         <TableRow
             android:id="@+id/headerTable"
-            android:layout_marginTop="1dp"
-            android:layout_marginHorizontal="1dp">
+            android:layout_marginTop="@dimen/headerOfTableMargin"
+            android:layout_marginHorizontal="@dimen/rowTableMargin">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name"
+                android:text="@string/ColumnOne_Name"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:background="@color/table_header"
                 android:textStyle="bold"
-                android:layout_marginRight="1dp"/>
+                android:layout_marginRight="@dimen/cellMargin"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Grade"
+                android:text="@string/ColumnTwo_Name"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:background="@color/table_header"
@@ -44,95 +46,95 @@
         </TableRow>
 
         <TableRow
-            android:layout_marginHorizontal="1dp">
+            android:layout_marginHorizontal="@dimen/rowTableMargin">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Momen"
                 android:gravity="center"
                 android:layout_weight="1"
-                android:background="#D5D5D5"
-                android:layout_marginRight="1dp"/>
+                android:background="@color/firstRaw"
+                android:layout_marginRight="@dimen/cellMargin"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="46"
+                android:text="35"
                 android:gravity="center"
                 android:layout_weight="1"
-                android:background="#D5D5D5"/>
+                android:background="@color/firstRaw"/>
         </TableRow>
         <TableRow
-            android:layout_marginHorizontal="1dp">
+            android:layout_marginHorizontal="@dimen/rowTableMargin">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Yousef"
                 android:gravity="center"
                 android:layout_weight="1"
-                android:layout_marginRight="1dp"
-                android:background="#EFEFEF"/>
+                android:layout_marginRight="@dimen/cellMargin"
+                android:background="@color/nextRaw"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="38"
+                android:text="41"
                 android:gravity="center"
                 android:layout_weight="1"
-                android:background="#EFEFEF"/>
+                android:background="@color/nextRaw"/>
         </TableRow>
         <TableRow
-            android:layout_marginHorizontal="1dp">
+            android:layout_marginHorizontal="@dimen/rowTableMargin">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Waled"
                 android:gravity="center"
                 android:layout_weight="1"
-                android:background="#D5D5D5"
-                android:layout_marginRight="1dp"/>
+                android:background="@color/firstRaw"
+                android:layout_marginRight="@dimen/cellMargin"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="42"
+                android:text="25"
                 android:gravity="center"
                 android:layout_weight="1"
-                android:background="#D5D5D5"/>
+                android:background="@color/firstRaw"/>
         </TableRow>
         <TableRow
-            android:layout_marginHorizontal="1dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Eslam"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:layout_marginRight="1dp"
-                android:background="#EFEFEF"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="26"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:background="#EFEFEF"/>
-        </TableRow>
-        <TableRow
-            android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="1dp">
+            android:layout_marginHorizontal="@dimen/rowTableMargin">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ebrahim"
                 android:gravity="center"
                 android:layout_weight="1"
-                android:background="#D5D5D5"
-                android:layout_marginRight="1dp"/>
+                android:layout_marginRight="@dimen/cellMargin"
+                android:background="@color/nextRaw"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="33"
                 android:gravity="center"
                 android:layout_weight="1"
-                android:background="#D5D5D5"/>
+                android:background="@color/nextRaw"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginHorizontal="@dimen/rowTableMargin"
+            android:layout_marginBottom="@dimen/rowTableMargin">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khaled"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@color/firstRaw"
+                android:layout_marginRight="@dimen/cellMargin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="38"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@color/firstRaw"/>
         </TableRow>
     </TableLayout>
 

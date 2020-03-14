@@ -4,5 +4,9 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
+    <!-- Fragment -->
     <color name="table_header">#979797</color>
+    <color name="colorBlack">#000000</color>
+    <color name="firstRaw">#D5D5D5</color>
+    <color name="nextRaw">#EFEFEF</color>
 </resources>

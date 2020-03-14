@@ -1,14 +1,31 @@
 <resources>
     <string name="app_name">Teacher grades</string>
 
+    <!--  TODO: Login Activity (String and Dimens)  -->
     <string name="hint_name_to_login">Enter your name</string>
     <string name="login_btn">Login</string>
-
     <dimen name="hint_name_to_login_marginTop">250dp</dimen>
     <dimen name="login_btn_marginTop">100dp</dimen>
 
-    <!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Student Grades Activity (String and Dimens) -->
+    <string name="hello">Hello $name</string>
+    <string name="hintToAddClass">Enter Class you want to show</string>
+    <dimen name="helloTextSize">20sp</dimen>
+    <dimen name="helloTextMarginTop">50dp</dimen>
+    <dimen name="helloTextMarginLeft">20dp</dimen>
+
+    <!-- TODO: Fragments Activity (String and Dimens) -->
     <string name="classATitle">Class A</string>
     <string name="classBTitle">Class B</string>
     <string name="classCTitle">Class C</string>
+    <string name="ColumnOne_Name">Name</string>
+    <string name="ColumnTwo_Name">Grade</string>
+    <dimen name="classTitleSize">20sp</dimen>
+    <dimen name="classTitleMarginLeft">30dp</dimen>
+    <dimen name="tableMarginHorizontal">30dp</dimen>
+    <dimen name="tableMarginTop">20dp</dimen>
+    <dimen name="headerOfTableMargin">1dp</dimen>
+    <dimen name="rowTableMargin">1dp</dimen>
+    <dimen name="cellMargin">1dp</dimen>
+
 </resources>
