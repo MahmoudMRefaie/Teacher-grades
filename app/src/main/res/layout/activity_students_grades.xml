@@ -13,18 +13,20 @@
         android:layout_marginTop="@dimen/helloTextMarginTop"
         android:layout_marginLeft="@dimen/helloTextMarginLeft"/>
 
-    <FrameLayout
+    <RelativeLayout
         android:id="@+id/fragmentLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hello"
+        android:layout_marginTop="20dp">
         <TextView
             android:id="@+id/hintToPutClass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/hintToAddClass"
-            android:gravity="center"/>
-    </FrameLayout>
+            android:gravity="center"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"

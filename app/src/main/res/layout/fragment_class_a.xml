@@ -14,13 +14,59 @@
         android:textSize="@dimen/classTitleSize"
         android:textColor="@color/colorBlack"
         android:layout_marginLeft="@dimen/classTitleMarginLeft"/>
-    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/stuTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/tableMarginHorizontal"
+            android:layout_marginTop="@dimen/tableMarginTop"
+            android:background="@color/colorBlack">
+            <TableRow
+                android:id="@+id/headerTable"
+                android:layout_marginTop="@dimen/headerOfTableMargin"
+                android:layout_marginHorizontal="@dimen/rowTableMargin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ColumnOne_Name"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/table_header"
+                    android:textStyle="bold"
+                    android:layout_marginRight="@dimen/cellMargin"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ColumnTwo_Name"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/table_header"
+                    android:textStyle="bold"/>
+            </TableRow>
+        </TableLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/classARecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/stuTable"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <!--
     <TableLayout
+        android:id="@+id/stuTable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/tableMarginHorizontal"
         android:layout_marginTop="@dimen/tableMarginTop"
         android:background="@color/colorBlack">
+
 
         <TableRow
             android:id="@+id/headerTable"
@@ -46,8 +92,10 @@
         </TableRow>
 
         <TableRow
+            android:id="@+id/row_NameGrade"
             android:layout_marginHorizontal="@dimen/rowTableMargin">
             <TextView
+                android:id="@+id/row1col1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ali"
@@ -56,6 +104,7 @@
                 android:background="@color/firstRaw"
                 android:layout_marginRight="@dimen/cellMargin"/>
             <TextView
+                android:id="@+id/row1col2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="30"
@@ -136,6 +185,8 @@
                 android:layout_weight="1"
                 android:background="@color/firstRaw"/>
         </TableRow>
+
     </TableLayout>
+    -->
 
 </LinearLayout>

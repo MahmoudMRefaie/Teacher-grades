@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_students_grades.*
+import kotlinx.android.synthetic.main.fragment_class_a.*
 
 class StudentsGradesActivity : AppCompatActivity()/*,OnClickListener*/ {
 
@@ -15,7 +16,7 @@ class StudentsGradesActivity : AppCompatActivity()/*,OnClickListener*/ {
     lateinit var classBFrag : ClassBFragment
     lateinit var classCFrag : ClassCFragment
 
-    var teacherName:String=""
+    var teacherName:String?=""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
